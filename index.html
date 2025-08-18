@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">	
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#travels">Travels</a>
-  <a href="#writings">Writings</a>
-  <a href="#seminar">Reading seminar</a>
-</div>
-<div>
 
-<br>
-<br>
+	<div id="navbar-container"></div>
+	<script>
+		fetch("navbar.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("navbar-container").innerHTML = data;
+			});
+	</script>
+	<!--
+	<script>
+//		alert(3);
+	fetch('navbar.html')
+		.then(x => x.text())
+		.then(y => document.write(y));
+	</script>
+	-->
+
+<div>
 
 	<p>
 	Vít Jelínek <br>
@@ -27,8 +35,8 @@ Category Theory + Logic<br>
 
 Hi!
 I am a PhD student of Computer Science at the University of Sussex under the supervision of <a href="https://alessio-santamaria.com">Alessio Santamaria</a> and <a href="https://users.sussex.ac.uk/~bernhard/">Bernhard Reus</a>.
-
-My interests lie in various interactions between logic and category theory.
+<br>
+My research interests lie in various interactions between logic and category theory. By this, I mean mostly type theory (and its categorical semantics), and 2-dimensional structures (currently focused on getting a better understanding of contravariance and dinatural transformations).
 </p>
 </div>
 </body>

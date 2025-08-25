@@ -39,6 +39,7 @@ nav {
   display: flex; /* organises everything in a flex box */
   justify-content: center; /*horizontal position */
   align-items: center; /* vertical position */
+  font-family: Arial;
 }
 
 /* Style the links inside the navigation bar */
@@ -64,6 +65,20 @@ nav ul li a.active {
   color: white;
 }
 
-.course {
+.inline-headline{
 	color: violet;
+}
+
+.intro-pic {
+	float: right;
+	width: 300px;
+	margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+	.intro-pic {
+		float: center;
+    	width: 100%; // The width is 100%, when the viewport is 600px or smaller 
+		margin: 10px;
+  }
 }

@@ -40,6 +40,7 @@ nav {
   justify-content: center; /*horizontal position */
   align-items: center; /* vertical position */
   font-family: Arial;
+  z-index: 9999; /* Makes it always in front of other content*/
 }
 
 /* Style the links inside the navigation bar */
